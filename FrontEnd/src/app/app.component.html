@@ -1,0 +1,66 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-success ">
+    
+    <a  href="#" class="navbar-brand"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+      <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+    </svg> BankSophos</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="tutorials" class="nav-link">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="add" class="nav-link">Exit</a>
+      </li>
+    </div>
+    
+    <button type="button" class="btn btn-outline-dark">Registar</button>
+
+    <button type="button" class="btn btn-outline-dark">Iniciar Sesión</button>
+  </nav>
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-navbar></app-navbar>
+
+<!DOCTYPE html>
+<html>
+<title>Bank</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Bank</h3>
+  <!-- <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a> -->
+  <!-- <a href="#" class="w3-bar-item w3-button">bezKoder</a> -->
+  <!-- <a routerLink="tutorials" class="w3-bar-item w3-button">Tutorials</a>
+  <a routerLink="add" class="w3-bar-item w3-button">Add</a> -->
+  <a routerLink="clients" class="w3-bar-item w3-button">Clients</a>
+  <a routerLink="addClients" class="w3-bar-item w3-button">Add Clients</a>
+  <a routerLink="cuentas" class="w3-bar-item w3-button">Accounts</a>
+  <a routerLink="addCuentas" class="w3-bar-item w3-button">Add Account</a>
+  <a routerLink="movimientos" class="w3-bar-item w3-button">Movements</a>
+  <a routerLink="addMovimientos" class="w3-bar-item w3-button">Add Movements</a>
+  <a routerLink="addMovimientos" class="w3-bar-item w3-button">Add Movements</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+<!-- <img src="img_car.jpg" alt="Car" style="width:100%"> -->
+
+<div class="w3-container">
+<!-- <h2>Sidebar Navigation Example</h2>
+<p>The sidebar with is set with "style="width:25%".</p>
+<p>The left margin of the page content is set to the same value.</p> -->
+<router-outlet></router-outlet>
+</div>
+
+</div>
+      
+</body>
+</html>
