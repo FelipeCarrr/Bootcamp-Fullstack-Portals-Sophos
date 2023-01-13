@@ -1,0 +1,28 @@
+version: "2"
+services:
+  mysqldb:
+    image: mysql:5.7
+    ports:
+      - '3306:3306'
+    restart: always
+    environment:
+      - MYSQL_DATABASE=testdb
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - boot-mysql
+       
+  app:
+    image: 'demo-boot:latest'
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on:
+      - mysqldb
+    networks:
+      - boot-mysql
+    links:
+      - mysqldb
+      
+networks:
+  boot-mysql: 
+ 
