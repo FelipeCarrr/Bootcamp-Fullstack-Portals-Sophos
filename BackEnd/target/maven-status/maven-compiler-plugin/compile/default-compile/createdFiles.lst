@@ -1,0 +1,15 @@
+com\example\demo\configuracines\MySecurityConfig.class
+com\example\demo\configuracines\JwtAuthenticationEntryPoint.class
+com\example\demo\configuracines\JwtAuthenticationFilter.class
+com\example\demo\modelo\UsuarioRol.class
+com\example\demo\modelo\JwtRequest.class
+com\example\demo\services\UsuarioService.class
+com\example\demo\modelo\Usuario.class
+com\example\demo\configuracines\JwtUtils.class
+com\example\demo\repository\RolRepository.class
+com\example\demo\modelo\Rol.class
+com\example\demo\services\UserDetailsServiceImpl.class
+com\example\demo\services\UsuarioServiceImpl.class
+com\example\demo\repository\UsuarioRepository.class
+com\example\demo\modelo\Authority.class
+com\example\demo\modelo\JwtResponse.class
